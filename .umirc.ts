@@ -39,6 +39,11 @@ export default defineConfig({
         path: '/useReducer',
         component: './UseReducer',
     },
+    {
+        name: ' useCallback',
+        path: '/useCallback',
+        component: './UseCallback',
+    },
   ],
   npmClient: 'pnpm',
 });

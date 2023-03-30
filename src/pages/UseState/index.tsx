@@ -20,6 +20,17 @@ const Index: React.FC = () => {
     setTimer(interval)
     return interval
   }
+  // question: 为什么person的name和age不会被更新？
+  // answer: 因为person是一个对象，对象是引用类型，当你改变person的值时，你只是改变了person的引用，而不是改变了person的值
+  // q: 怎么样正确修改person的属性
+  // a: 1. 使用useReducer
+  //    2. 使用展开运算符
+  //  3. 使用Object.assign
+  //  4. 使用lodash的set方法
+  //  5. 使用immer
+  //  6. 使用immutable.js
+  // 7. 使用mobx
+
   const personChange = () => {
     person.name = 'Tom'
     person.age = 30
